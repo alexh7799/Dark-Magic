@@ -1,0 +1,113 @@
+@media only screen and (max-width: 720px) {
+    canvas {
+        width: 100%;
+    }
+
+    .menu-container {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    #options-screen {
+        transform: scale(0.9);
+    }
+
+    h1 {
+        font-size: 1.9em;
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        margin: 5px 0;
+    }
+    
+}
+
+@media only screen and (max-width: 540px) {
+    .ui {
+        transform: scale(0.8);
+        right: 0px;
+    }
+
+    .btn {
+        transform: scale(0.8);
+    }
+
+    .btn-container {
+        gap: 0px;
+    }
+
+    .panel-wrapper{
+        gap: 5px;
+    }
+
+    #options-screen {
+        margin: 5px;
+    }
+
+    .overlay {
+        padding: 10px;
+    }
+
+    .infos {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .infos .table:last-child {
+        align-self: start;
+        flex: 1;
+    }
+
+    .infos .table:last-child span:last-child {
+        width: 160px !important;
+    }
+
+    .impressum {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+    }
+
+    .menu-container{
+        height: 100vh;
+    }
+
+    .menu {
+        height: 100%;
+    }
+    
+    #options-screen {
+        transform: scale(0.6);
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    h1 {
+        display: none !important;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .panel-wrapper {
+        display: flex !important;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+    #rotate-device {
+        display: flex !important;
+    }
+}

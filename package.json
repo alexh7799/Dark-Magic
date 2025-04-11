@@ -1,0 +1,17 @@
+{
+  "name": "2d-game",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "alex",
+  "license": "ISC",
+  "dependencies": {
+    "jsdoc": "^4.0.4"
+  }
+}

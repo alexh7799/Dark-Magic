@@ -1,0 +1,52 @@
+.impressum {
+    background-image: url('../img/ui/PNG/MiniPanel06.jpg');
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 85%;
+    height: 1000px;
+    padding: 40px;
+    color: #ddd;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ddd;
+    margin: 20px 0;
+    height: 40px;
+}
+
+h1 {
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        overflow: auto;
+        height: auto !important;
+        margin: 8px !important;
+    }
+
+    .infos {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    
+    .impressum {
+        height: auto;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
