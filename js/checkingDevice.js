@@ -19,10 +19,8 @@ function checkMobileDevice() {
             element.style.display = 'flex';
             document.getElementById('hud').classList.remove('d-none');
         });
-        console.log('mobile')
     } else {
         document.getElementById('hud').classList.add('d-none');
-        console.log('not mobile')
     }
 }
 
