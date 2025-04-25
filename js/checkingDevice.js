@@ -2,18 +2,6 @@
  * Check if the device is a mobile device
  */
 function checkMobileDevice() { 
-    // setInterval(() => handleOrientation(),1000)
-    // if (/Android|WebOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || navigator.userAgentData.mobile || navigator.maxTouchPoints > 0) {
-    //     document.getElementById('hud').classList.remove('d-none');
-    //     if (!screen.orientation && !screen.orientation.type.includes('landscape')) {
-    //         showRotateMessage();
-    //     }
-    //     if (screen.orientation) {
-    //         screen.orientation.addEventListener('change', handleOrientation);
-    //     } else if (window.matchMedia) {
-    //         window.matchMedia("(orientation: landscape)").addEventListener(handleOrientation);
-    //     }
-    // } else document.getElementById('hud').classList.add('d-none');
     if(isMobile.any) {
         document.querySelectorAll('#hud').forEach(element => {
             element.style.display = 'flex';
