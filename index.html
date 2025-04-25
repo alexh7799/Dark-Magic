@@ -11,6 +11,7 @@
     <title>Dark Magic</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./styles/responsiv.css">
+    <script src="./js/checkingDevice.js"></script>
     <script src="./models/world.class.js"></script>
     <script src="./models/keyboard.class.js"></script>
     <script src="./models/drawableObjects.class.js"></script>
@@ -46,9 +47,13 @@
                         <img src="./img/ui/PNG/Icons/Circle01.png">
                         <img class="img-in mude" id="mute" src="./img/ui/PNG/Icons/sound.svg">
                     </button>
-                    <button type="button" onclick="enableFullscreen()">
+                    <button type="button" id="enableButton" onclick="enableFullscreen()">
                         <img src="./img/ui/PNG/Icons/Circle01.png">
                         <img class="img-in btn-fullscreen" src="./img/ui/PNG/Icons/fullscreen.svg">
+                    </button>
+                    <button type="button" class="d-none" id="disableButton" onclick="disableFullscreen()">
+                        <img src="./img/ui/PNG/Icons/Circle01.png">
+                        <img class="img-in btn-fullscreen" src="./img/ui/PNG/Icons/fullscreen-disable.svg">
                     </button>
                 </div>
             </div>
@@ -93,10 +98,8 @@
                 </div>
             </div>
         </div>
-        <div id="hud" class="hud">
-            <div class="panel">
-                
-            </div>
+        <div id="hud" class="hud d-none">
+            <div class="panel"></div>
             <div class="panel">
                 <div class="panel-wrapper">
                     <button type="button" id="btnLeft">
@@ -123,10 +126,7 @@
                     </button>
                 </div>
             </div>
-
         </div>
-
-
     </div>
     <div id="options-screen" class="overlay-container d-none" onclick="event.stopPropagation()">
         <div class="overlay" onclick="event.stopPropagation()">
@@ -237,6 +237,7 @@
         <img src="./img/ui/PNG/Icons/smartphone.svg" alt="">
         <p>Bitte das Gerät drehen</p>
     </div>
+    <script src="./node_modules/ismobilejs/dist/isMobile.min.js"></script>
     <script src="./js/game.js"></script>
 </body>
 

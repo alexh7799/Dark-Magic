@@ -11,6 +11,7 @@ let sounds = [];
 function init() {
     canvas = document.getElementById('canvas');
     world  = new World(canvas, keyboard);
+    checkMobileDevice()
     initSounds();
     loadMuteStatus();
     world.stopGame();
@@ -201,6 +202,26 @@ async function enableFullscreen() {
         } else if (element.msRequestFullscreen) {
             await element.msRequestFullscreen();
         }
+        document.getElementById('enableButton').classList.add('d-none');
+        document.getElementById('disableButton').classList.remove('d-none');
+    } catch (error) {}
+    document.activeElement.blur();
+}
+
+/**
+ * Disable the fullscreen mode
+ */
+async function disableFullscreen() {
+    try {
+        if (document.exitFullscreen) {
+            await document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            await document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            await document.msExitFullscreen();
+        }
+        document.getElementById('enableButton').classList.remove('d-none');
+        document.getElementById('disableButton').classList.add('d-none');
     } catch (error) {}
     document.activeElement.blur();
 }

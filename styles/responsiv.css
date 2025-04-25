@@ -100,13 +100,13 @@
     }
 }
 
-@media only screen and (hover: none) and (pointer: coarse){
-    .panel-wrapper {
+@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+    #rotate-device {
         display: flex !important;
     }
 }
 
-@media only screen and (hover: none) and (pointer: coarse) and (orientation: portrait) {
+@media only screen and (max-width: 720px) and (orientation: portrait) {
     #rotate-device {
         display: flex !important;
     }

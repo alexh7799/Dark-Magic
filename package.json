@@ -12,6 +12,7 @@
   "author": "alex",
   "license": "ISC",
   "dependencies": {
+    "ismobilejs": "^1.1.1",
     "jsdoc": "^4.0.4"
   }
 }

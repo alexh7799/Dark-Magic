@@ -89,23 +89,6 @@ h2 {
     justify-content: space-between;
 }
 
-.hud {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./img/background/Reference-Image.png');
-    background-size: cover;
-    background-position: center;
-    background-color: #260504;
-    
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    mask-image: linear-gradient(#cfcfcf, #c0c0c0);
-    gap: 10px;
-}
-
 .infos {
     display: flex;
     justify-content: center;
@@ -203,12 +186,14 @@ canvas {
     align-items: stretch;
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: transparent;
+    z-index: 998;
+    gap: 10px;
+    pointer-events: none;
 }
 
 .panel {
@@ -221,7 +206,8 @@ canvas {
 }
 
 .panel-wrapper {
-    display: none;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -310,12 +296,6 @@ button img {
     position: absolute;
     z-index: 999;
     pointer-events: auto; 
-}
-
-.hud {
-    position: fixed;
-    z-index: 998;
-    pointer-events: none;
 }
 
 .hud button {
