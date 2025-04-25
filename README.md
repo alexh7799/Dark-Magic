@@ -1,6 +1,6 @@
 # Dark Magic - Jump and Run Spiel
 
-![Dark Magic Logo](./img/ui/PNG/Icons/logo.svg)
+![Dark Magic Logo](./img/favion/logo.svg)
 
 ## Beschreibung
 Dark Magic ist ein spannendes Jump and Run Spiel, bei dem du einen Magier durch verschiedene Level steuerst. Sammle magische Tränke, weiche Gegnern aus und nutze deine Zauberkräfte um das Ziel zu erreichen.
